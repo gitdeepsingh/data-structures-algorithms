@@ -32,7 +32,7 @@ examples at P7.js
 
 ## ADVANCED
 
-### Merge Sort
+### Merge Sort TC: O(NlogN), SC: O(N)
     > combination of : splitting + merging + sorting  
     > exploits the fact the arrays of 0 or 1 element are always sorted  
     > decomposes larger arrays into smaller sub-arrays until we end up with sorted arrays of 0 or 1 element.  
@@ -43,5 +43,12 @@ examples at P7.js
     
   <img src="/images/mergeSort.JPG" width=500 height=250 />
 
-  BIG-O  
+  ##### BIG-O  
+  let arr length=32  
+  applying mergeSort, we will split this until we get 32 sub-arrays each with length=1  
+  So, total number of times we need to split = 5 i.e.  
+    32 > 16+16 > 8+8+8+8 > 4+4+4+4+4+... > 2+2+2+... > 1+1+1+1+1+....  
+  This gives 2^5=32 => log(32)=5, here, bigO=O(logN)  
+  and for N items we do merging as well after split => O(NlogN)  
+  
   <img src="/images/mergeSort-bigO.JPG" width=500 height=125 />
