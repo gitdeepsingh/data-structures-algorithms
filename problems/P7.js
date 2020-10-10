@@ -115,7 +115,7 @@ insertionSort([8, 1, 2, 3, 4, 5, 6, 7]) // [1,2,3,4,5,6,7,8]
 
 /* ###################### merge sort ####################*/
 // PART 1: Merge Function
-/* creating a function merge for merging two sorted arrays (with sizes n and m) to get a sorted
+/* creating a function merge for merging two sorted(in same order) arrays (with sizes n and m) to get a sorted
 array result with all those elements. This should run in O(n+m) time and O(n+m) spcace and should not
 modify the parameters paased to it.
 PSEUDO CODE
@@ -127,5 +127,21 @@ PSEUDO CODE
         # if the value in the first array is larger than the value in the second array,
           push the value in the second array into our results and move onto the next value
           in the second array.
+        # once we exhaust one array, push in all remaining vlaues from the other array.
 
 */
+function merge(arr1, arr2) {
+  let results = [];
+  let i = 0;
+  let j = 0;
+  while (i < arr1.length && j < arr2.length) {
+    // push the smaller from two arrays
+    if (arr1[i] < arr2[j]) { results.push(arr1[i]); i++; }
+    else { results.push(arr2[j]); j++ }
+  }
+  while (i < arr1.length) { results.push(arr1[i]); i++ } // still elements present in arr1 that are not yet looked upon
+  while (j < arr2.length) { results.push(arr2[j]); j++ } // still elements present in arr2 that are not yet looked upon
+  return results
+}
+
+merge([1, 2, 3], [11, 12, 13, 14, 15, 16, 100]);
