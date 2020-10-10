@@ -48,7 +48,7 @@ function bubbleSort(arr) {
   return arr;
 }
 
-bubbleSort([38, 41, 8, 3, 2, 9]) // [8,9,23,34,56,78]
+bubbleSort([38, 41, 8, 3, 2, 9]) // [2, 3, 8, 9, 38, 41]
 bubbleSort([8, 1, 2, 3, 4, 5, 6, 7]) // [1,2,3,4,5,6,7, 8] // loop runs 28 times
 
 // optimization
@@ -71,7 +71,7 @@ function bubbleSort2(arr) {
   return arr;
 }
 
-bubbleSort2([38, 41, 8, 3, 2, 9]) // [8,9,23,34,56,78]
+bubbleSort2([38, 41, 8, 3, 2, 9]) // [2, 3, 8, 9, 38, 41]
 bubbleSort2([8, 1, 2, 3, 4, 5, 6, 7]) // [1,2,3,4,5,6,7, 8] // loop runs 13 times
 
 
@@ -93,7 +93,7 @@ function selectionSort(arr) {
   return arr;
 }
 
-selectionSort([38, 41, 8, 3, 2, 9]) // [8,9,23,34,56,78]
+selectionSort([38, 41, 8, 3, 2, 9]) // [2, 3, 8, 9, 38, 41]
 selectionSort([8, 1, 2, 3, 4, 5, 6, 7]) // [1,2,3,4,5,6,7,8]
 
 /* ###################### insertion sort ####################*/
@@ -109,7 +109,7 @@ function insertionSort(arr) {
   return arr;
 }
 
-insertionSort([38, 41, 8, 3, 2, 9]) // [8,9,23,34,56,78]
+insertionSort([38, 41, 8, 3, 2, 9]) // [2, 3, 8, 9, 38, 41]
 insertionSort([8, 1, 2, 3, 4, 5, 6, 7]) // [1,2,3,4,5,6,7,8]
 
 
@@ -154,7 +154,7 @@ function mergeSort(arr) {
   return merge(left, right);
 }
 
-mergeSort([38, 41, 8, 3, 2, 9]) // [8,9,23,34,56,78]
+mergeSort([38, 41, 8, 3, 2, 9]) // [2, 3, 8, 9, 38, 41]
 mergeSort([8, 1, 2, 3, 4, 5, 6, 7]) // [1,2,3,4,5,6,7,8]
 
 /* ###################### quick sort ####################*/
@@ -188,5 +188,16 @@ function pivot(arr, start = 0, end = arr.length - 1) {
   swap(arr, start, swapIndex);
   return swapIndex;
 }
+// pivot([4, 8, 2, 1, 5, 7, 6, 3]) // 3
 
-pivot([4, 8, 2, 1, 5, 7, 6, 3]) // 3
+// PART 2:
+function quickSort(arr, left = 0, right = arr.length - 1) {
+  if (left < right) {
+    let pivotIndex = pivot(arr, left, right);
+    quickSort(arr, left, pivotIndex - 1); // left
+    quickSort(arr, pivotIndex + 1, right); // right
+  }
+  return arr;
+}
+
+quickSort([38, 41, 8, 3, 2, 9]) // [2, 3, 8, 9, 38, 41]
