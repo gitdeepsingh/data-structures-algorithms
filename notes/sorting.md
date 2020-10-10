@@ -80,7 +80,7 @@ examples at P7.js
       - replace existing array with values from the bucket, starting with 0 upto 9  
       - return list  
 
-  ##### BIG-O    
+  ##### BIG-O (generally accepted)
   <img src="/images/radixSort-bigO.JPG" width=500 height=125 />   
 
 
