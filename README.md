@@ -22,9 +22,9 @@ O(n) ops inside of a O(n) op - O(n^2)
     4. solve / simplify
     5. revisit and refactor
 
-# *NOTES
->   auxiliary space complexity / space complexity - Space required by the algorith, excluding the input.
->   log2(8) = 3 => 2^3=8 i.e. log(value) = exponent => 2^exponent = value
+# NOTES
+    *auxiliary space complexity / space complexity - Space required by the algorith, excluding the input.
+    *log2(8) = 3 => 2^3=8 i.e. log(value) = exponent => 2^exponent = value
 
 
 
