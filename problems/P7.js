@@ -144,4 +144,15 @@ function merge(arr1, arr2) {
   return results
 }
 
-merge([1, 2, 3], [11, 12, 13, 14, 15, 16, 100]);
+// merge([1, 2, 3], [11, 12, 13, 14, 15, 16, 100]);
+
+function mergeSort(arr) {
+  if (arr.length <= 1) return arr;
+  let mid = arr.length >> 1;
+  let left = mergeSort(arr.slice(0, mid));
+  let right = mergeSort(arr.slice(mid));
+  return merge(left, right);
+}
+
+mergeSort([38, 41, 8, 3, 2, 9]) // [8,9,23,34,56,78]
+mergeSort([8, 1, 2, 3, 4, 5, 6, 7]) // [1,2,3,4,5,6,7,8]

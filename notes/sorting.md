@@ -40,5 +40,8 @@ examples at P7.js
         - break up the array into halves until you have arrays that are empty or have one element.  
         - merge those smaller arrays with other sorted arrays until we are back the full length of the actual array.  
         - once the array has been merged back together, return the merged (and sorted) arrays.  
+    
+  <img src="/images/mergeSort.JPG" width=400 height=400 />
 
-
+  BIG-O  
+  <img src="/images/mergeSort-bigO.JPG" width=400 height=400 />
