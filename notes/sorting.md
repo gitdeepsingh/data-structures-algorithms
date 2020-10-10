@@ -64,3 +64,19 @@ examples at P7.js
 
   ##### BIG-O    
   <img src="/images/quickSort-bigO.JPG" width=500 height=125 />  
+
+### Radix Sort
+    > Special sort for itegers, not a coparison sort  
+    > exploit the digit place in an integer  
+    > this technique sorts the elements by first grouping the individual digits of the same place value. Then, sort the elements according to their increasing/decreasing order.  
+    > Pseudo code:  
+      - function that accepts list of numbers  
+      - find the number of digits in largest number  
+      - loop from k = 0 to this largets number of digits  
+      - for each iteration:  
+            create bucket for each number (0 to 9)  
+            place each number in corresponding bucket based on its kth digit  
+      - replace existing array with values from the bucket, starting with 0 upto 9  
+      - return list  
+
+

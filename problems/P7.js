@@ -201,3 +201,47 @@ function quickSort(arr, left = 0, right = arr.length - 1) {
 }
 
 quickSort([38, 41, 8, 3, 2, 9]) // [2, 3, 8, 9, 38, 41]
+
+/* ###################### radix sort ####################*/
+// PART 1: Helper functions
+/*
+getDigit(num, place): returns the digit in num at the given place value.
+digitCount(num): returns the number of digits in num.
+mostDigits(nums): given an array of numbers, returns the number of digits in
+the largest number in the list (uses digitCount).
+*/
+function getDigit(num, i) { // taken from stackoverflow:)
+  return Math.floor(Math.abs(num) / Math.pow(10, i)) % 10;
+}
+//getDigit(456345, 3); // 6
+
+function digitCount(num) {
+  if (num === 0) return 1;
+  return Math.floor(Math.log10(Math.abs(num))) + 1;
+}
+// digitCount(654); // 3
+
+function mostDigits(nums) {
+  let max = 0;
+  nums.forEach(elem => {
+    max = Math.max(max, digitCount(elem))
+  });
+  return max;
+}
+// mostDigits([43234, 34, 34, 33, 2, 333])
+
+// PART 2:
+function radixSort(nums) { // nums is array of numbers
+  let maxDigitsCount = mostDigits(nums);
+  for (let k = 0; k < maxDigitsCount; k++) {
+    let digitBuckets = Array.from({ length: 10 }, () => []) // 10 slots
+    for (let i = 0; i < nums.length; i++) {
+      let digit = getDigit(nums[i], k)
+      digitBuckets[digit].push(nums[i]);
+    }
+    nums = [].concat(...digitBuckets);
+  }
+  return nums
+}
+
+radixSort([38, 41, 8, 3, 2, 9]) // [2, 3, 8, 9, 38, 41]
