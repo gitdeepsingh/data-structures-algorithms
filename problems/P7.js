@@ -157,7 +157,7 @@ function mergeSort(arr) {
 mergeSort([38, 41, 8, 3, 2, 9]) // [8,9,23,34,56,78]
 mergeSort([8, 1, 2, 3, 4, 5, 6, 7]) // [1,2,3,4,5,6,7,8]
 
-/* ###################### merge sort ####################*/
+/* ###################### quick sort ####################*/
 // PART 1: Pivot Helper Function
 /*PSEUDO-CODE
   > It will help to accept three arguments: an array, start index(0), end index(array length-1)
