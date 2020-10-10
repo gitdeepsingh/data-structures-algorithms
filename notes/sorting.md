@@ -68,7 +68,8 @@ examples at P7.js
 ### Radix Sort
     > Special sort for itegers, not a coparison sort  
     > exploit the digit place in an integer  
-    > this technique sorts the elements by first grouping the individual digits of the same place value. Then, sort the elements according to their increasing/decreasing order.  
+    > this technique sorts the elements by first grouping the individual digits of the same place value.  
+    Then, sort the elements according to their increasing/decreasing order.  
     > Pseudo code:  
       - function that accepts list of numbers  
       - find the number of digits in largest number  
