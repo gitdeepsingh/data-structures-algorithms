@@ -143,9 +143,9 @@ function merge(arr1, arr2) {
   while (j < arr2.length) { results.push(arr2[j]); j++ } // still elements present in arr2 that are not yet looked upon
   return results
 }
-
 // merge([1, 2, 3], [11, 12, 13, 14, 15, 16, 100]);
 
+// PART 2:
 function mergeSort(arr) {
   if (arr.length <= 1) return arr;
   let mid = arr.length >> 1;
@@ -156,3 +156,37 @@ function mergeSort(arr) {
 
 mergeSort([38, 41, 8, 3, 2, 9]) // [8,9,23,34,56,78]
 mergeSort([8, 1, 2, 3, 4, 5, 6, 7]) // [1,2,3,4,5,6,7,8]
+
+/* ###################### merge sort ####################*/
+// PART 1: Pivot Helper Function
+/*PSEUDO-CODE
+  > It will help to accept three arguments: an array, start index(0), end index(array length-1)
+  > Grab the pivot from the start of the array.
+  > Store the current pivot index in a variable (this will keep of where the pivot should end up).
+  > Loop through the array:
+        > if pivot is greater than the currenet element, increment the pivot index variable and
+        then swap the current element with the element at the pivot index
+  > Swap the starting element(the pivot) with the pivot index.
+  > Return the pivot index.
+*/
+
+function pivot(arr, start = 0, end = arr.length - 1) {
+  function swap(arr, i, j) {
+    var temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+  }
+  var pivot = arr[start];
+  var swapIndex = start;
+
+  for (var i = start + 1; i < arr.length; i++) {
+    if (pivot > arr[i]) {
+      swapIndex++;
+      swap(arr, swapIndex, i);
+    }
+  }
+  swap(arr, start, swapIndex);
+  return swapIndex;
+}
+
+pivot([4, 8, 2, 1, 5, 7, 6, 3]) // 3

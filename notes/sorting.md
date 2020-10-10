@@ -51,4 +51,9 @@ examples at P7.js
   This gives 2^5=32 => log(32)=5, here, bigO=O(logN)  
   and for N items we do merging as well after split => O(NlogN)  
   
-  <img src="/images/mergeSort-bigO.JPG" width=500 height=125 />
+  <img src="/images/mergeSort-bigO.JPG" width=500 height=125 />  
+
+### Quick Sort
+    > like merge sort, it also exploits the fact that arrays of 0 and 1 element are always sorted.  
+    > works by selecting one element (called the pivot) and finding the index where the pivot should end up in the sorted array. Basically positioning array elements that are less than pivot to the left and array elements greater than the pivot to the right portions making sure that the pivot is always at the correct expected spot.(Ideally, pivot selected should be the middle, but as it is little challenging, so better choose first element as pivot).  
+    > once the pivot is positioned appropriately, quick sort can be applied on either side of the pivot.  
