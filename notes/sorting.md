@@ -31,6 +31,12 @@
 ## ADVANCED
 
 ### Merge Sort
-    > combination of : splitting + merging + sorting
+    > combination of : splitting + merging + sorting  
     > exploits the fact the arrays of 0 or 1 element are always sorted  
-    > decomposes larger arrays into smaller sub-arrays until we end up with sorted arrays of 0 or 1 element
+    > decomposes larger arrays into smaller sub-arrays until we end up with sorted arrays of 0 or 1          element  
+    > pseudo-code:   
+        - break up the array into halves until you have arrays that are empty or have one element.  
+        - merge those smaller arrays with other sorted arrays until we are back the full length of the       actual array.  
+        - once the array has been merged back together, return the merged (and sorted) arrays.  
+
+
