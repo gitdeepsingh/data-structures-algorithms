@@ -13,7 +13,13 @@ O(n) ops inside of a O(n) op - O(n^2)
         ,where n = length
 
 ## logs complexity*
-<img src="/images/logs.JPG" width=250 height=250 />
+<img src="/images/logs.JPG" width=250 height=250 />  
+
+# Data Structures
+    collections of values, the relationships among them, and the function or operations  
+    that can be applied to data.  
+    different data structures excel at different things.  
+    Examples: Arrays, Linked Lists, Stacks, Trees, Graphs, Heaps
 
 # Problem Solving
     1. understand the problem
