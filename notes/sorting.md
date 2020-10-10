@@ -1,5 +1,5 @@
-// https://visualgo.net/en/sorting
-// examples at P7.js
+https://visualgo.net/en/sorting
+examples at P7.js
 
 # SORTING
     > rearranging items in an order/basis
