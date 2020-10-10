@@ -10,7 +10,7 @@ O(n) ops inside of a O(n) op - O(n^2)
     primitives like boolean, null, undefined - constant O(1)
     strings - O(n)
     referece types like array - O(n)
-                                    > where n = length
+        ,where n = length
 
 ## logs complexity*
 <img src="/images/logs.JPG" width=250 height=250 />
