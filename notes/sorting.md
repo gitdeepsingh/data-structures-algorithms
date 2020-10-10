@@ -66,7 +66,7 @@ examples at P7.js
   <img src="/images/quickSort-bigO.JPG" width=500 height=125 />  
 
 ### Radix Sort
-    > Special sort for itegers, not a coparison sort  
+    > Special sort for integers, not a coparison sort  
     > exploit the digit place in an integer  
     > this technique sorts the elements by first grouping the individual digits of the same place value.  
     Then, sort the elements according to their increasing/decreasing order.  
