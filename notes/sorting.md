@@ -41,7 +41,7 @@ examples at P7.js
         - merge those smaller arrays with other sorted arrays until we are back the full length of the actual array.  
         - once the array has been merged back together, return the merged (and sorted) arrays.  
     
-  <img src="/images/mergeSort.JPG" width=650 height=650 />
+  <img src="/images/mergeSort.JPG" width=300 height=500 />
 
   BIG-O  
-  <img src="/images/mergeSort-bigO.JPG" width=900 height=900 />
+  <img src="/images/mergeSort-bigO.JPG" width=500 height=200 />
