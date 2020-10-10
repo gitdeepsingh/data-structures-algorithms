@@ -9,7 +9,8 @@ examples at P7.js
 
 ## JS sort()
     > The sort() method sorts the elements of an array in place and returns the sorted array.  
-    The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.  
+    The default sort order is ascending, built upon converting the elements into strings,  
+    then comparing their sequences of UTF-16 code units values.  
     > ex:   ['b','d', 'a','c'].sort() outputs ['a', 'b', 'c', 'd']
             [1, 30, 4, 21, 100000].sort() outputs [1, 100000, 21, 30, 4]
 
