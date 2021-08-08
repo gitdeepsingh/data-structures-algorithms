@@ -49,3 +49,15 @@ node2.next = node3;
 
 const list = new LinkList(node1)
 console.log('LinkedList=', list);
+
+const size = list.size();
+console.log('Size=', size);
+
+const lastNode = list.getLast();
+console.log('LastNode=', lastNode);
+
+const firstNode = list.getFirst();
+console.log('FirstNode=', firstNode);
+
+list.clear()
+console.log("LinkedList after clearing=", list);
