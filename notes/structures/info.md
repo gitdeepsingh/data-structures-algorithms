@@ -1,0 +1,1 @@
+## In VS Code I have used live server extension to run static files like htmls
