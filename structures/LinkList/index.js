@@ -46,6 +46,7 @@ const node2 = new ListNode(100);
 const node3 = new ListNode(678);
 node1.next = node2;
 node2.next = node3;
+console.log('###########################-LINKEDLISTS START-############################');
 
 const list = new LinkList(node1)
 console.log('LinkedList=', list);
@@ -61,3 +62,5 @@ console.log('FirstNode=', firstNode);
 
 list.clear()
 console.log("LinkedList after clearing=", list);
+
+console.log('###########################-LINKEDLISTS END-############################');
