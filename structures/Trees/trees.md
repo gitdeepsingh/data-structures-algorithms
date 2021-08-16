@@ -43,3 +43,9 @@ homer.descendants.push(bart, lisa, maggie);`
 we have a tree data structure!
 
 <img src="/images/tree-example.jpg" width=250 height=250 />
+
+Let's consider below example,
+
+<img src="/images/tree-array.png" width=750 height=300 />
+
+In the examples above, the root is the array itself, and all its elements are children. If the child is not an array, then it is considered as a leaf node, otherwise — as an internal node. The internal node, in turn, consists of children.
