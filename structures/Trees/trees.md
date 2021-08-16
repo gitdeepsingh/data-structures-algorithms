@@ -29,16 +29,15 @@ Depth or level of a node is the distance between the root and the node in questi
 
 We can create a tree with 3 descendants as follows:
 
-`// create nodes with values
-const abe = new TreeNode('Abe');
-const homer = new TreeNode('Homer');
-const bart = new TreeNode('Bart');
-const lisa = new TreeNode('Lisa');
+
+const abe = new TreeNode('Abe'); 
+const homer = new TreeNode('Homer'); 
+const bart = new TreeNode('Bart'); 
+const lisa = new TreeNode('Lisa'); 
 const maggie = new TreeNode('Maggie');
 
-// associate root with is descendants
-abe.descendants.push(homer);
-homer.descendants.push(bart, lisa, maggie);`
+abe.descendants.push(homer); 
+homer.descendants.push(bart, lisa, maggie);
 
 we have a tree data structure!
 
@@ -49,3 +48,12 @@ Let's consider below example,
 <img src="/images/tree-array.png" width=750 height=300 />
 
 In the examples above, the root is the array itself, and all its elements are children. If the child is not an array, then it is considered as a leaf node, otherwise — as an internal node. The internal node, in turn, consists of children.
+
+Using JS objects:
+
+<img src="/images/tree-object.png" width=750 height=300 />
+
+The object itself can always be considered as a tree, regardless of its internal structure and the presence of nested elements. Such is their nature. The structure is present where you need to store exactly the tree data, for example, the file system.
+
+
+### explained:  https://medium.com/@iampika/javascript-trees-b8f3b4261c3a  
