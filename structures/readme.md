@@ -1,12 +1,12 @@
 # Abstract Data Type(ADT) 
-####It is a data type, where only behavior is defined but not implementation.
+#### It is a data type, where only behavior is defined but not implementation.
 
-####Opposite of ADT is Concrete Data Type (CDT), where it contains an implementation of ADT.
+#### Opposite of ADT is Concrete Data Type (CDT), where it contains an implementation of ADT.
 
-####Examples:
+#### Examples:
 ####Array, List, Map, Queue, Set, Stack, Table, Tree, and Vector are ADTs. Each of these ADTs has many implementations i.e. CDT. The container is a high-level ADT of above all ADTs.
 
-####Real life example:
+#### Real life example:
 book is Abstract (Telephone Book is an implementation)
 
 ### Actually Abstract Data Types is:
@@ -19,5 +19,4 @@ For example, lets see specifications of some Abstract Data Types,
 
 List Abstract Data Type: initialize(), get(), insert(), remove(), etc.
 Stack Abstract Data Type: push(), pop(), peek(), isEmpty(), isNull(), etc.
-Queue Abstract Data Type: enqueue(), dequeue(), size(), peek(), etc.
- 
+Queue Abstract Data Type: enqueue(), dequeue(), size(), peek(), etc. 
