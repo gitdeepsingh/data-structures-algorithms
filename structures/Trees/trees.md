@@ -1,5 +1,5 @@
 ## TREE*
-<img src="/images/tree.jpg" width=350 height=550 />
+<img src="/images/tree.jpg" width=550 height=300 />
 
 
 
